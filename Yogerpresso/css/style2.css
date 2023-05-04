@@ -1,0 +1,62 @@
+.mainslide{
+    height: 100vh;
+    /* text-align: center; */
+}
+
+.mainslide .content {
+    max-width: 60rem;
+}
+
+.mainslide .bg1{
+    background: url(../images/main2.jpg) no-repeat center / cover;}
+.mainslide .bg2{
+    background: url(../images/swiper\ \(1\).jpg) no-repeat center / cover;}
+.mainslide .bg3{
+    background: url(../images/swiper\ \(2\).jpg) no-repeat center / cover;}
+.mainslide .bg4{
+    background: url(../images/swiper\ \(3\).jpg) no-repeat center / cover;}
+
+
+.mainslide .swiper-slide{
+    display: flex;
+    align-items: left;
+    padding-left: 10rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.mainslide .title{
+    line-height: 6rem;
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+
+}
+.mainslide .txt{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: #eee;
+    margin-top: 1.5rem;
+    opacity: 0;
+
+}
+
+
+.swiper-slide .content a {
+    margin-top: 2.5rem;
+}
+
+.mainslide .swiper-slide-active .title{animation: ani 1s .3s both;}
+.mainslide .swiper-slide-active .txt{animation: ani 2s .7s both;}
+.mainslide .swiper-slide-active a{animation: ani 3s 1s both;}
+
+@keyframes ani{
+    0%{opacity: 0; transform: translateY(30px);}
+    100%{opacity: 1; transform: translateY(0px);}
+}
